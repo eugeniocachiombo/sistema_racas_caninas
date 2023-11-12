@@ -6,7 +6,7 @@ function Identificar(){
 }    
 
 function ClicarBotao(){
-    if(isset($_POST["submit"])){
+    if(isset($_POST["btn_indentificar"])){
 
         $altura = $_POST["altura"];
         $cor = $_POST["cor"];
