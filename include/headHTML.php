@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all5.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all6.css">
-    <link rel="stylesheet" href="assets/css/flat_picker.css">
-    <link rel="stylesheet" href="assets/css/tema_calendario.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
-    <link rel="stylesheet" href="assets/css/tabela.css">
+    <link rel="stylesheet" href="assets/css/inputs.css">
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <script src="assets/jquery/jquery.js"></script>
     <title>Página Incial</title>
 </head>
 <body>
+
+<header class="bg-secondary text-white">
+    <div class="d-flex justify-content-center align-items-center" style="min-height: inherit">
+        <h1><b>Sistema Identificador de Raças de Caninas</b></h1>
+    </div>
+</header>

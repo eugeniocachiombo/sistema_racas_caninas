@@ -20,14 +20,14 @@ class RacaDao {
         cabeca = ? and orelhas = ? and olhos = ?";
         $stmt = $con->prepare($sql);
         $stmt->bindValue(1, $atributos->GetAltura() );
-        $stmt->bindValue(1, $atributos->GetCor() );
-        $stmt->bindValue(1, $atributos->GetPelos() );
-        $stmt->bindValue(1, $atributos->GetPata() );
-        $stmt->bindValue(1, $atributos->GetCauda() );
-        $stmt->bindValue(1, $atributos->GetFocinho() );
-        $stmt->bindValue(1, $atributos->GetCabeca() );
-        $stmt->bindValue(1, $atributos->GetOrelhas() );
-        $stmt->bindValue(1, $atributos->GetOlhos() );
+        $stmt->bindValue(2, $atributos->GetCor() );
+        $stmt->bindValue(3, $atributos->GetPelos() );
+        $stmt->bindValue(4, $atributos->GetPata() );
+        $stmt->bindValue(5, $atributos->GetCauda() );
+        $stmt->bindValue(6, $atributos->GetFocinho() );
+        $stmt->bindValue(7, $atributos->GetCabeca() );
+        $stmt->bindValue(8, $atributos->GetOrelhas() );
+        $stmt->bindValue(9, $atributos->GetOlhos() );
         $stmt->execute();
         return $stmt->fetchAll();
     }
