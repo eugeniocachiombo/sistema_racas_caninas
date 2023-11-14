@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2023 at 01:45 PM
+-- Generation Time: Nov 14, 2023 at 03:39 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -65,7 +65,8 @@ INSERT INTO `atributos` (`id_atributos`, `altura`, `cor`, `pelos`, `pata`, `caud
 (26, 1, 1, 4, 2, 3, 2, 2, 2, 4, 16),
 (27, 2, 2, 1, 2, 4, 3, 4, 4, 2, 13),
 (28, 1, 3, 1, 2, 4, 4, 4, 4, 4, 14),
-(29, 1, 1, 4, 2, 3, 2, 2, 2, 2, 15);
+(29, 1, 1, 4, 2, 3, 2, 2, 2, 2, 15),
+(30, 1, 1, 4, 2, 2, 2, 2, 2, 2, 17);
 
 -- --------------------------------------------------------
 
@@ -98,7 +99,8 @@ INSERT INTO `raca` (`id_raca`, `nome_raca`) VALUES
 (13, 'Tosa'),
 (14, 'Weimaraner'),
 (15, 'Whippet'),
-(16, ' Skye Terrier');
+(16, ' Skye Terrier'),
+(17, 'Affenpinscher');
 
 -- --------------------------------------------------------
 
@@ -213,13 +215,13 @@ ALTER TABLE `valor_tamanho`
 -- AUTO_INCREMENT for table `atributos`
 --
 ALTER TABLE `atributos`
-  MODIFY `id_atributos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_atributos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `raca`
 --
 ALTER TABLE `raca`
-  MODIFY `id_raca` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_raca` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `valor_altura`
