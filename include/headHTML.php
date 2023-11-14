@@ -17,6 +17,6 @@
 
 <header class="bg-secondary text-white">
     <div class="d-flex justify-content-center align-items-center" style="min-height: inherit">
-        <h1><b>Sistema Identificador de Raças de Caninas</b></h1>
+        <i class="fas fa-dog me-2" style="font-size: 100px"> </i> <h1><b>Sistema Identificador de Raças Caninas</b></h1>
     </div>
 </header>
