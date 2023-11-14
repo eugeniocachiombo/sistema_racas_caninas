@@ -5,22 +5,29 @@
 <?php include 'dao/valor_tamanho_dao.php';?>
 <?php include 'dao/raca_dao.php';?>
 
-<h1>Sistema Identificador de Raças de Cães</h1>
+<header class="bg-secondary text-white">
+    <div class="d-flex justify-content-center align-items-center" style="min-height: inherit">
+        <h1><b>Sistema Identificador de Raças de Caninas</b></h1>
+    </div>
+</header>
 
 <?php
 if(isset($_POST["submit"])){
-    echo "<br> Saida: " . $_POST["altura"];
-    echo "<br> Saida: " . $_POST["cor"];
-    echo "<br> Saida: " . $_POST["pelos"];
-    echo "<br> Saida: " . $_POST["pata"];
-    echo "<br> Saida: " . $_POST["cauda"];
-    echo "<br> Saida: " . $_POST["focinho"];
-    echo "<br> Saida: " . $_POST["cabeca"];
-    echo "<br> Saida: " . $_POST["orelhas"];
-    echo "<br> Saida: " . $_POST["olhos"];
 
+    $altura = $_POST["altura"];
+    $cor = $_POST["cor"];
+    $pelos = $_POST["pelos"];
+    $pata = $_POST["pata"];
+    $cauda = $_POST["cauda"];
+    $focinho = $_POST["focinho"];
+    $cabeca = $_POST["cabeca"];
+    $orelhas = $_POST["orelhas"];
+    $olhos = $_POST["olhos"];
+
+    $atributos = new Atributos ($altura, $cor, $pelos, $pata, $cauda, $focinho, $cabeca, $orelhas, $olhos);
     $raca_dao = new RacaDao();
-    $resultados = $raca_dao->Buscar();
+    $resultados = $raca_dao->Buscar($atributos);
+
     if(empty($resultados)){
         echo "Esta Raça não existe!";
     } else{
@@ -183,4 +190,12 @@ if(isset($_POST["submit"])){
     </form>
 </div>
 
+
+<footer class="bg-secondary text-white">
+    <div class="d-flex justify-content-center align-items-center" style="min-height: inherit">
+        <b>Sistema Identificador de Raças de Caninas</b>
+    </div>
+</footer>
+
 <?php include 'include/footHTML.php'; ?>
+

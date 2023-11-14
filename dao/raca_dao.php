@@ -1,7 +1,7 @@
 <?php
 
 class RacaDao {
-    function Buscar(){
+    function Buscar($atributos){
         $con = GetConexao();
         $sql = "select raca.nome_raca from raca
         inner join atributos on raca.id_raca = atributos.id_raca
@@ -15,10 +15,19 @@ class RacaDao {
         inner join valor_tamanho as orelhas on atributos.orelhas = orelhas.id_valor_tamanho
         inner join valor_tamanho as olhos on atributos.olhos = olhos.id_valor_tamanho
         where 
-        altura = '3' and cor = '3' and pelos = '4' and
-        pata = '4' and cauda = '2' and focinho = '4' and
-        cabeca = '4' and orelhas = '2' and olhos = '1'";
+        altura = ? and cor = ? and pelos = ? and
+        pata = ? and cauda = ? and focinho = ? and
+        cabeca = ? and orelhas = ? and olhos = ?";
         $stmt = $con->prepare($sql);
+        $stmt->bindValue(1, $atributos->GetAltura() );
+        $stmt->bindValue(1, $atributos->GetCor() );
+        $stmt->bindValue(1, $atributos->GetPelos() );
+        $stmt->bindValue(1, $atributos->GetPata() );
+        $stmt->bindValue(1, $atributos->GetCauda() );
+        $stmt->bindValue(1, $atributos->GetFocinho() );
+        $stmt->bindValue(1, $atributos->GetCabeca() );
+        $stmt->bindValue(1, $atributos->GetOrelhas() );
+        $stmt->bindValue(1, $atributos->GetOlhos() );
         $stmt->execute();
         return $stmt->fetchAll();
     }

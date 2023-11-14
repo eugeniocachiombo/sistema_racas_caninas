@@ -20,9 +20,8 @@ body{
 }
 
 header{
-    min-height: 20vh;
-    background: khaki;
-    color: rgb(58, 58, 58);
+    min-height: 40vh;
+    color: rgb(255, 255, 255);
 }
 
 main{
@@ -31,7 +30,6 @@ main{
 
 footer{
     min-height: 20vh;
-    background: #222;
     color: white;
 }
 
