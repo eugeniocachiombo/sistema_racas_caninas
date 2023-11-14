@@ -27,6 +27,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `atributos`
 --
 
+create Database racas_caninas;
+
+use racas_caninas;
+
 CREATE TABLE `atributos` (
   `id_atributos` int(11) NOT NULL,
   `altura` int(11) DEFAULT NULL,
