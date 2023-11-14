@@ -12,4 +12,4 @@ inner join valor_tamanho as olhos on atributos.olhos = olhos.id_valor_tamanho
 where 
 altura = '3' and cor = '3' and pelos = '4' and
 pata = '4' and cauda = '2' and focinho = '4' and
-cabeca = '4' and orelhas = '2' and olhos = '1'
+cabeca = '4' and orelhas = '2' and olhos = '1' limit 1

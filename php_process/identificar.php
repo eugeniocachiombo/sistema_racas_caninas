@@ -29,6 +29,15 @@
                         <h3 class="text-center p-2"><b><?php echo $resultado['nome_raca']; ?></b></h3>
                     </div>
                 </div>
+
+                <div class="row border mt-4" style="border-radius: 20px">
+                    <div class="col-5">
+                        <?php 
+                            $resultado_tratado = str_replace(" ", "_", $resultado['nome_raca']);
+                        ?>
+                        <img src="assets/img/<?php echo $resultado_tratado.'.jpg'; ?>" alt="">
+                    </div>
+                </div>
            <?php }
         }
         
