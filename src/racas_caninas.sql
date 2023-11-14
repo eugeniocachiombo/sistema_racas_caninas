@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2023 at 01:40 AM
+-- Generation Time: Nov 14, 2023 at 01:45 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `atributos`
 --
 
-create Database racas_caninas;
+create database racas_caninas;
 
 use racas_caninas;
 
@@ -50,7 +50,7 @@ CREATE TABLE `atributos` (
 --
 
 INSERT INTO `atributos` (`id_atributos`, `altura`, `cor`, `pelos`, `pata`, `cauda`, `focinho`, `cabeca`, `orelhas`, `olhos`, `id_raca`) VALUES
-(1, 3, 3, 4, 4, 2, 4, 4, 2, 1, 1),
+(1, 3, 3, 4, 4, 2, 4, 4, 2, 2, 1),
 (2, 2, 2, 4, 2, 2, 3, 4, 3, 3, 2),
 (15, 1, 3, 3, 3, 4, 3, 3, 2, 2, 3),
 (16, 1, 3, 2, 3, 3, 3, 3, 4, 3, 4),
