@@ -3,6 +3,7 @@
 <?php include 'dao/valor_altura_dao.php';?>
 <?php include 'dao/valor_cor_dao.php';?>
 <?php include 'dao/valor_tamanho_dao.php';?>
+<?php include 'dao/raca_dao.php';?>
 
 <h1>Sistema Identificador de Raças de Cães</h1>
 
@@ -18,12 +19,16 @@ if(isset($_POST["submit"])){
     echo "<br> Saida: " . $_POST["orelhas"];
     echo "<br> Saida: " . $_POST["olhos"];
 
-    $raca_dao = new ValorAlturaDao();
+    $raca_dao = new RacaDao();
     $resultados = $raca_dao->Buscar();
-    foreach ($resultados as $resultado) { 
-         echo $resultado["id_raca"]; 
-         echo $resultado['nome_raca'];
+    if(empty($resultados)){
+        echo "Esta Raça não existe!";
+    } else{
+        foreach ($resultados as $resultado) { 
+            echo "<br> Saida: " . $resultado['nome_raca'];
+       }
     }
+    
 }
 ?>
 
