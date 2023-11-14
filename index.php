@@ -160,6 +160,7 @@
             </div>
         </div>
     </form>
+    <p class="text-center text-md-start mt-3"> <i class="fab fa-dev me-2" style="font-size: 30px"></i><b>Eugénio Cachiombo</b></p>
 </div>
 
 <?php include 'include/footHTML.php'; ?>
